@@ -10,14 +10,19 @@ public class StringFormatApp {
 
         int id = 10135;
         String name = "Brandon Plyers";
-        char middleInitial = 'F';
+
         float pay = 5239.77f;
 
-//        String message = "Brandon Plyers id:10135 $5,239.77";
-//        String message =  name + "id: " + id + " $" + pay;
-        String message = String.format("%s Initial:%c  id:%d $%.2f", name,middleInitial, id, pay);
+        String messageTemplate = "Brandon Plyers id:10135 $5239.77";
+        String messageUsingConcatentation =  name + " id:" + id + " $" + pay;
+        String messageUsingStringFormat = String.format("%s id:%d $%.2f", name, id, pay);
 
-        System.out.println(message);
+        System.out.println(messageTemplate);
+        System.out.println(messageUsingConcatentation);
+        System.out.println(messageUsingStringFormat);
+
+
+
 
 
 
