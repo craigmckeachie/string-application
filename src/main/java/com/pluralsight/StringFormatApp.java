@@ -14,11 +14,11 @@ public class StringFormatApp {
         float pay = 5239.77f;
 
         String messageTemplate = "Brandon Plyers id:10135 $5239.77";
-        String messageUsingConcatentation =  name + " id:" + id + " $" + pay;
+        String messageUsingConcat =  name + " id:" + id + " $" + pay;
         String messageUsingStringFormat = String.format("%s id:%d $%.2f", name, id, pay);
 
         System.out.println(messageTemplate);
-        System.out.println(messageUsingConcatentation);
+        System.out.println(messageUsingConcat);
         System.out.println(messageUsingStringFormat);
 
 
